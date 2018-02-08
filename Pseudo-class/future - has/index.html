@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+
+    <style>
+        /* Future: The Relational Pseudo-class :has() https://drafts.csswg.org/selectors-4/#relational */
+        /* Can I use: https://caniuse.com/#feat=css-has */
+
+        p:has(>ul) {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="products">
+        Products:
+        <ul>
+            <li>Shoes</li>
+            <li>Jeans</li>
+            <li>Jacket</li>
+        </ul>
+    </p>
+    <p>
+        This should be the only visible line.
+    </p>
+</body>
+
+</html>
