@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- Mozilla Public License Version 2.0 -->
+<!-- Copyright © 2018 Rick Beerendonk -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo-class - :fullscreen</title>
+
+    <style>
+        /* :fullscreen pseudo-class: http://developer.mozilla.org/en-US/docs/Web/CSS/_fullscreen.html */
+
+        div:-webkit-full-screen {
+            color: red;
+        }
+
+        div:-moz-full-screen {
+            color: red;
+        }
+
+        div:-ms-fullscreen {
+            color: red;
+        }
+
+        div:fullscreen {
+            color: red;
+        }
+
+        /* ::backdrop pseudo-element: http://developer.mozilla.org/en-US/docs/Web/CSS/__backdrop.html */
+
+        div::-ms-backdrop {
+            background: rgba(255,0,0,.25);
+        }
+
+        div::backdrop {
+            background: rgba(255,0,0,.25);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="toggle">Click this line toggle fullscreen. The color should change!</div>
+
+    <script>
+        // Full Screen API: http://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API.html
+
+        (function () {
+            document.fullscreenEnabled = document.fullscreenEnabled
+                || document.webkitFullscreenEnabled
+                || document.mozFullScreenEnabled
+                || document.msFullScreenEnabled;
+
+            document.exitFullscreen = document.exitFullscreen
+                || document.webkitExitFullscreen
+                || document.mozCancelFullScreen
+                || document.msExitFullscreen;
+
+            const elem = document.getElementById('toggle');
+
+            // 1. Check if full screen is enabled, quit otherwise.
+
+            if (!document.fullscreenEnabled) {
+                elem.innerText = 'Full Screen is not enabled.';
+                return;
+            }
+
+            // 2. Add event handlers
+
+            function fullscreenChange(ev) {
+                console.log('Full screen change');
+            }
+
+            function fullscreenError(ev) {
+                console.error('Full screen error');
+            }
+
+            if (document.onfullscreenchange !== undefined) {
+                document.onfullscreenchange = fullscreenChange;
+            } else if (document.onwebkitfullscreenchange !== undefined) {
+                document.onwebkitfullscreenchange = fullscreenChange;
+            } else if (document.onmozfullscreenchange !== undefined) {
+                document.onmozfullscreenchange = fullscreenChange;
+            } else if (document.MSFullscreenChange !== undefined) {
+                document.MSFullscreenChange = fullscreenChange;
+            }
+
+            if (document.onfullscreenerror !== undefined) {
+                document.onfullscreenerror = fullscreenError;
+            } else if (document.onwebkitfullscreenerror !== undefined) {
+                document.onwebkitfullscreenerror = fullscreenError;
+            } else if (document.onmozfullscreenerror !== undefined) {
+                document.onmozfullscreenerror = fullscreenError;
+            } else if (document.MSFullscreenError !== undefined) {
+                document.MSFullscreenError = fullscreenError;
+            }
+
+            document.onfullscreenerror = ev => {
+                console.error('Full screen error');
+            }
+
+            elem.onclick = function (ev) {
+                // Cancel full screen:
+                if ((document.fullscreenElement && document.fullscreenElement.id === 'toggle')
+                    || (document.webkitFullscreenElement && document.webkitFullscreenElement.id === 'toggle')
+                    || (document.mozFullScreenElement && document.mozFullScreenElement.id === 'toggle')
+                    || (document.msFullscreenElement && document.msFullscreenElement.id === 'toggle')
+                ) {
+                    document.exitFullscreen();
+                    return;
+                }
+
+                // Request full screen:
+                if (elem.requestFullscreen) {
+                    elem.requestFullscreen();
+                } else if (elem.webkitRequestFullScreen) {
+                    elem.webkitRequestFullScreen();
+                } else if (elem.mozRequestFullScreen) {
+                    elem.mozRequestFullScreen();
+                } else if (elem.msRequestFullscreen) {
+                    elem.msRequestFullscreen();
+                }
+            };
+        })();
+    </script>
+</body>
+
+</html>
