@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- Mozilla Public License Version 2.0 -->
+<!-- Copyright © 2018 Rick Beerendonk -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selectors - Basic Selectors - Attribute - Suffixed value</title>
+
+    <style>
+        [data-styled$="d"] {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+        <div data-styled>Should not be styled</div>
+        <div data-styled="first">Should not be styled</div>
+        <div data-styled="second">Should be styled</div>
+        <div data-styled="third">Should be styled</div>
+        <div data-styled="THIRD">Should not be styled</div>
+        <div data-styled="fourth">Should not be styled</div>
+        <div>Should not be styled</div>
+</body>
+
+</html>

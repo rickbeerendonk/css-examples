@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Selectors - Basic Selectors - Attribute</title>
+    <title>Selectors - Basic Selectors - Attribute - Has attribute</title>
 
     <style>
         [data-styled] {
@@ -18,6 +18,11 @@
 
 <body>
     <div data-styled>Should be styled</div>
+    <div data-styled="first">Should be styled</div>
+    <div data-styled="second">Should be styled</div>
+    <div data-styled="third">Should be styled</div>
+    <div data-styled="fourth">Should be styled</div>
+    <div data-styled="FOURTH">Should be styled</div>
     <div>Should not be styled</div>
 </body>
 
