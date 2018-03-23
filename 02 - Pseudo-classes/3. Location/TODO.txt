@@ -1,0 +1,6 @@
+:any-link
+:link & :visited
+:local-link
+:target
+:target-within
+:scope

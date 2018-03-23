@@ -1,0 +1,18 @@
+Input Control States
+
+:enabled & :disabled
+:read-only & :read-write
+:placeholder-shown
+:default
+
+Input Value States
+
+:checked
+:indeterminate
+
+Input Value-checking
+
+:valid & :invalid
+:in-range & :out-of-range
+:required & :optional
+:user-invalid

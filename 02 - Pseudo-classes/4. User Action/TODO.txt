@@ -1,0 +1,6 @@
+:hover
+:active
+:focus
+:focus-visible
+:focus-within
+:drop & :drop()
