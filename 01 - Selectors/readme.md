@@ -29,3 +29,7 @@
 ## Documentation
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors
+
+---
+
+Copyright © 2018 Rick Beerendonk
