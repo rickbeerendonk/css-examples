@@ -1,4 +1,4 @@
-# Display
+# Display (Box Layout)
 
 ## Specification
 
