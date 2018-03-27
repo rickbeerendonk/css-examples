@@ -2,7 +2,6 @@
 
 Homepage: [css-houdini.org](https://css-houdini.org)
 
-
 ## Specifications
 
 Overview of [draft specifications](https://drafts.css-houdini.org/)
@@ -14,3 +13,7 @@ Overview of [draft specifications](https://drafts.css-houdini.org/)
 ## Browser support
 
 * [Is Houdini ready yet?](http://ishoudinireadyyet.com)
+
+---
+
+Copyright © 2018 Rick Beerendonk
