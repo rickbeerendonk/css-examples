@@ -7,27 +7,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pseudo-class - Input - :read-only & :read-write</title>
+    <title>Pseudo-class - Input - Control States - :enabled & :disabled</title>
 
     <style>
-        body :read-only {
-            background: salmon;
+        :enabled {
+            background: palegreen;
         }
 
-        body :read-write {
-            background: palegreen;
+        :disabled {
+            background: salmon;
         }
     </style>
 </head>
 
 <body>
-    <h1>Read-Only</h1>
-    <label>This is a normal label.</label>
-
-    <h1>Read-Write</h1>
+    <h1>Enabled</h1>
     <input type="text">
-    <br>
-    <label contenteditable="true">This is a contenteditable label.</label>
+
+    <h1>Disabled</h1>
+    <input type="text" disabled>
 </body>
 
 </html>
