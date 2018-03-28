@@ -1,5 +1,9 @@
 # Flexbox
 
+## Specifications
+
+* https://www.w3.org/TR/css-flexbox-1/
+
 ## Tips & Tricks
 
 * [Using ```display: contents``` to make the children of a flex item behave like flex items](https://rachelandrew.co.uk/archives/2016/01/29/vanishing-boxes-with-display-contents/)
