@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Mozilla Public License Version 2.0 -->
+<!-- Copyright © 2018 Rick Beerendonk -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo-class - Input - Control States - :checked</title>
+
+    <style>
+        input:checked + label {
+        color: red;
+        }
+        
+        input:checked {
+            box-shadow: 0 0 0 3px red;
+        }
+
+        option:checked {
+            box-shadow: 0 0 0 3px red;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Checkbox</h1>
+    <form>
+        <input type="checkbox" id="checkboxChoice1">
+        <label for="checkboxChoice1">First</label>
+        <input type="checkbox" id="checkboxChoice2" checked>
+        <label for="checkboxChoice2">Second</label>
+    </form>
+
+    <h1>Radio</h1>
+    <form>
+        <input type="radio" name="choice" id="radioChoice1">
+        <label for="radioChoice1">First</label>
+        <input type="radio" name="choice" id="radioChoice2" checked>
+        <label for="radioChoice2">Second</label>
+    </form>
+
+    <h1>Option</h1>
+    <select name="text">
+        <option value="one">First</option>
+        <option value="two">Second</option>
+        <option value="three">Third</option>
+    </select>
+</body>
+
+</html>
