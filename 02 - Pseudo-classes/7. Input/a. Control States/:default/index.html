@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- Mozilla Public License Version 2.0 -->
+<!-- Copyright © 2018 Rick Beerendonk -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo-class - Input - Control States - :default</title>
+
+    <style>
+        :default {
+            border-width: 3px;
+            border-style: dotted;
+            border-color: red;
+            color: red;
+            font-style: italic;
+        }
+        
+        input[type=checkbox]::after {
+            content: "N";
+            display: block;
+            position: relative;
+            background-color: white;
+            border-width: 1px;
+            border-color: green;
+            border-style: solid;
+        }
+
+        input[type=checkbox]:checked::after {
+            content: "Y";
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Submit button in a form</h1>
+    <form>
+        <button type="button">First</button>
+        <button type="submit">Second (default)</button>
+        <button type="reset">Third</button>
+    </form>
+
+    <h1>Checked input</h1>
+    <form>
+        <label>
+            <input type="checkbox">First</label>
+        <label>
+            <input type="checkbox" checked>Second</label>
+    </form>
+
+    <h1>Selected option</h1>
+    <select name="text">
+        <option value="one">First</option> 
+        <option value="two" selected>Second (selected)</option>
+        <option value="three">Third</option>
+      </select>
+</body>
+
+</html>
