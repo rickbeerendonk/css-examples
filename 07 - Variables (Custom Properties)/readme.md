@@ -8,3 +8,7 @@
 ## Can I use?
 
 * https://caniuse.com/#search=custom%20properties
+
+---
+
+Copyright © 2018 Rick Beerendonk
