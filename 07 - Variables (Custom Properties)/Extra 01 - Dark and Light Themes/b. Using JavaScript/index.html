@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Mozilla Public License Version 2.0 -->
+<!-- Copyright © 2018 Rick Beerendonk -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Variables (Custom Properties) - Dark and Light Themes - Using JavaScript</title>
+
+    <style>
+        /* Definition of a CSS Variable */
+        body {
+            --background-color: white;
+            --foreground-color: black;
+            background-color: var(--background-color);
+            color: var(--foreground-color);
+        }
+
+        body:has(#theme-selector:checked) {
+            --background-color: black;
+            --foreground-color: white;            
+        }
+
+        footer {
+            font-size: 0.8rem;
+        }
+    </style>
+
+    <script>
+        function themeSelectorChange(themeSelector) {
+            const body = document.querySelector('body');
+
+            if (themeSelector.checked) {
+                body.style.setProperty('--background-color', 'black');
+                body.style.setProperty('--foreground-color', 'white');
+            } 
+            else {
+                body.style.removeProperty('--background-color');
+                body.style.removeProperty('--foreground-color');
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="theme-selector" onchange="themeSelectorChange(this)">
+        <label for="theme-selector">Dark theme</label>
+    </header>
+    <main>
+        <p>
+            This is an example of <em>CSS Variables</em>, also known by the offical name of CSS Custom Properties. 
+        </p>
+        <p>
+            CSS Variables are <em>supported in all latest browsers</em>, but not in Internet Explorer or Edge version 15 and lower.
+        </p>
+    </main>
+    <footer>
+        This document is created by <em>Rick Beerendonk</em>.
+    </footer>
+</body>
+</html>
