@@ -37,8 +37,8 @@
             const footer = document.querySelector('footer');
             const propertyValue = footer.style.getPropertyValue('--important-color');
 
-            if (propertyValue.trim() === 'lightgreen') {
-                footer.style.setProperty('--important-color', 'pink');
+            if (propertyValue) {
+                footer.style.removeProperty('--important-color');
             }
             else {
                 footer.style.setProperty('--important-color', 'lightgreen');
