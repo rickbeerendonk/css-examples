@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Grid - Basic</title>
+    <title>Grid - Basic - Auto</title>
 </head>
 <body>
-    <div class="mygrid">
+    <div class="container">
         <div class="one">1</div>
         <div class="two">2</div>
         <div class="three">3</div>
@@ -17,15 +17,31 @@
     </div>
 
     <style>
-        .mygrid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 10px;
-            grid-auto-rows: minmax(100px, auto);
+        body {
+            margin: 0;
         }
 
-        .one::before {
-            content: "hi"
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(2, auto);
+        }
+
+        .one {
+            background-color: #d676ff;
+        }
+
+        .two {
+            background-color: #9fff76;
+        }
+
+        .three {
+            background-color: #76c8ff;
+        }
+
+        .four {
+            background-color: #444;
+            color: white;
         }
     </style>
 </body>

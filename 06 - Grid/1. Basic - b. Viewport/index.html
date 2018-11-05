@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Mozilla Public License Version 2.0 -->
+<!-- Copyright © 2018 Rick Beerendonk -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid - Basic - Viewport</title>
+</head>
+<body>
+    <div class="container">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+    </div>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 50vw);
+            grid-template-rows: repeat(2, 50vh);
+        }
+
+        .one {
+            background-color: #d676ff;
+        }
+
+        .two {
+            background-color: #9fff76;
+        }
+
+        .three {
+            background-color: #76c8ff;
+        }
+
+        .four {
+            background-color: #444;
+            color: white;
+        }
+    </style>
+</body>
+</html>
