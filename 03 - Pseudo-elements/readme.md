@@ -30,6 +30,10 @@ https://www.w3.org/TR/css-pseudo-4/#treelike
 * ::marker
 * ::placeholder
 
----
+## Licence
 
-Copyright © 2019 Rick Beerendonk
+European Union Public Licence version 1.2
+
+## Copyright
+
+Copyright © 2018 Rick Beerendonk

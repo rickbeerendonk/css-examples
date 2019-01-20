@@ -14,6 +14,10 @@ Overview of [draft specifications](https://drafts.css-houdini.org/)
 
 * [Is Houdini ready yet?](http://ishoudinireadyyet.com)
 
----
+## Licence
+
+European Union Public Licence version 1.2
+
+## Copyright
 
 Copyright © 2018 Rick Beerendonk

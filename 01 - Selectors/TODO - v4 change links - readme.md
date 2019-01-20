@@ -30,6 +30,10 @@
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors
 
----
+## Licence
+
+European Union Public Licence version 1.2
+
+## Copyright
 
 Copyright © 2018 Rick Beerendonk
