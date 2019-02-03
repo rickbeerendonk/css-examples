@@ -2,46 +2,40 @@
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2018 Rick Beerendonk -->
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Display - Contents</title>
 
     <style>
-        div {
-            padding: 5px;
-            background-color: salmon;
-            border-color: red;
-            border-width: 3px;
-        }
+      div {
+        padding: 5px;
+        background-color: salmon;
+        border-color: red;
+        border-width: 3px;
+      }
 
-        span {
-            padding: 2px;
-            background-color: lightgreen;
-            border-color: green;
-            border-width: 1px;
-        }
+      span {
+        padding: 2px;
+        background-color: lightgreen;
+        border-color: green;
+        border-width: 1px;
+      }
 
-        #onlycontent {
-            display: contents;
-            font-weight: bold;
-        }
+      #onlycontent {
+        display: contents;
+        font-weight: bold;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <p>
-        <div>
-            <span>Parent should be visible</span>
-        </div>
-    </p>
-    <p>
-        <div id="onlycontent">
-            <span>Parent should not be visible</span>
-        </div>
-    </p>
-</body>
-
+  <body>
+    <div>
+      <span>Parent should be visible</span>
+    </div>
+    <div id="onlycontent">
+      <span>Parent should not be visible</span>
+    </div>
+  </body>
 </html>
