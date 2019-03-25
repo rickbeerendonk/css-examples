@@ -1,5 +1,10 @@
-# css-examples
-Examples for all kind of CSS technologies
+# CSS Examples
+
+Examples for all kind of CSS technologies.
+
+![](https://img.shields.io/github/license/rickbeerendonk/css-examples.svg)
+
+## Run
 
 To open examples you'll need to install a number of libraries:
 
