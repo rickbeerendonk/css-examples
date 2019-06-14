@@ -16,6 +16,6 @@
     "openserver": "node \"./Util 01 - Static File Server/static-file-server.js\" 8070"
   },
   "dependencies": {
-    "mime-types": "^2.1.21"
+    "mime-types": "^2.1.24"
   }
 }
