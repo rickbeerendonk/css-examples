@@ -1,0 +1,8 @@
+Specs: https://drafts.csswg.org/mediaqueries-5/#mf-user-preferences
+
+1. inverted-colors
+2. prefers-reduces-motion
+3. prefers-reduced-transparency
+4. prefers-contrast
+5. prefers-color-scheme
+6. forced-colors
