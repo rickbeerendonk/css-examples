@@ -55,14 +55,14 @@
     <img id="image" src="Sinnataggen.png" />
 
     <script>
-      $("input[type=checkbox]").on("change", function() {
-        var filter = $("input:checked")
+      $('input[type=checkbox]').on('change', function() {
+        var filter = $('input:checked')
           .map(function() {
             return this.dataset.filter;
           })
           .get()
-          .join(" ");
-        $("#image").css("filter", filter);
+          .join(' ');
+        $('#image').css('filter', filter);
       });
     </script>
   </body>

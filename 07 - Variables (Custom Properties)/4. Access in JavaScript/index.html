@@ -26,27 +26,27 @@
 
     <script>
       function readComputedStyle() {
-        const paragraph = document.querySelector("p");
+        const paragraph = document.querySelector('p');
         const propertyValue = getComputedStyle(paragraph).getPropertyValue(
-          "--important-color",
+          '--important-color'
         );
 
         alert(
-          "The --important-color variable on the first paragraph has value: " +
-            propertyValue,
+          'The --important-color variable on the first paragraph has value: ' +
+            propertyValue
         );
       }
 
       function changeInlineStyle() {
-        const footer = document.querySelector("footer");
+        const footer = document.querySelector('footer');
         const propertyValue = footer.style.getPropertyValue(
-          "--important-color",
+          '--important-color'
         );
 
         if (propertyValue) {
-          footer.style.removeProperty("--important-color");
+          footer.style.removeProperty('--important-color');
         } else {
-          footer.style.setProperty("--important-color", "lightgreen");
+          footer.style.setProperty('--important-color', 'lightgreen');
         }
       }
     </script>

@@ -31,14 +31,14 @@
 
     <script>
       function themeSelectorChange(themeSelector) {
-        const body = document.querySelector("body");
+        const body = document.querySelector('body');
 
         if (themeSelector.checked) {
-          body.style.setProperty("--background-color", "black");
-          body.style.setProperty("--foreground-color", "white");
+          body.style.setProperty('--background-color', 'black');
+          body.style.setProperty('--foreground-color', 'white');
         } else {
-          body.style.removeProperty("--background-color");
-          body.style.removeProperty("--foreground-color");
+          body.style.removeProperty('--background-color');
+          body.style.removeProperty('--foreground-color');
         }
       }
     </script>

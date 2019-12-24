@@ -60,23 +60,23 @@
           document.mozCancelFullScreen ||
           document.msExitFullscreen;
 
-        const elem = document.getElementById("toggle");
+        const elem = document.getElementById('toggle');
 
         // 1. Check if full screen is enabled, quit otherwise.
 
         if (!document.fullscreenEnabled) {
-          elem.innerText = "Full Screen is not enabled.";
+          elem.innerText = 'Full Screen is not enabled.';
           return;
         }
 
         // 2. Add event handlers
 
         function fullscreenChange(ev) {
-          console.log("Full screen change");
+          console.log('Full screen change');
         }
 
         function fullscreenError(ev) {
-          console.error("Full screen error");
+          console.error('Full screen error');
         }
 
         if (document.onfullscreenchange !== undefined) {
@@ -100,20 +100,20 @@
         }
 
         document.onfullscreenerror = ev => {
-          console.error("Full screen error");
+          console.error('Full screen error');
         };
 
         elem.onclick = function(ev) {
           // Cancel full screen:
           if (
             (document.fullscreenElement &&
-              document.fullscreenElement.id === "toggle") ||
+              document.fullscreenElement.id === 'toggle') ||
             (document.webkitFullscreenElement &&
-              document.webkitFullscreenElement.id === "toggle") ||
+              document.webkitFullscreenElement.id === 'toggle') ||
             (document.mozFullScreenElement &&
-              document.mozFullScreenElement.id === "toggle") ||
+              document.mozFullScreenElement.id === 'toggle') ||
             (document.msFullscreenElement &&
-              document.msFullscreenElement.id === "toggle")
+              document.msFullscreenElement.id === 'toggle')
           ) {
             document.exitFullscreen();
             return;

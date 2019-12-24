@@ -29,7 +29,7 @@ http
       filename = path.join(filename, 'index.html');
       if (!fs.existsSync(filename) && uri.length > 1) {
         response.writeHead(302, {
-          Location: '..',
+          Location: '..'
         });
         response.end();
         return;
