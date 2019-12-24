@@ -2,35 +2,33 @@
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2017 Rick Beerendonk -->
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Pseudo-class - Logical - :has</title>
 
     <style>
-        /* Future: The Relational Pseudo-class :has() https://drafts.csswg.org/selectors-4/#relational */
-        /* Can I use: https://caniuse.com/#feat=css-has */
+      /* Future: The Relational Pseudo-class :has() https://drafts.csswg.org/selectors-4/#relational */
+      /* Can I use: https://caniuse.com/#feat=css-has */
 
-        p:has(>ul) {
-            display: none;
-        }
+      p:has(> ul) {
+        display: none;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <p id="products">
-        Products:
-        <ul>
-            <li>Shoes</li>
-            <li>Jeans</li>
-            <li>Jacket</li>
-        </ul>
-    </p>
+  <body>
+    <div id="products">
+      <h2>Products</h2>
+      <ul>
+        <li>Shoes</li>
+        <li>Jeans</li>
+        <li>Jacket</li>
+      </ul>
+    </div>
     <p>
-        This should be the only visible line.
+      This should be the only visible line.
     </p>
-</body>
-
+  </body>
 </html>

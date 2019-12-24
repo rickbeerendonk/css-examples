@@ -2,7 +2,7 @@
 
 ## Specification
 
-* https://www.w3.org/TR/css-display-3/
+- https://www.w3.org/TR/css-display-3/
 
 ## Licence
 

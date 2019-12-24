@@ -2,7 +2,7 @@
 
 ## Blog
 
-* https://developers.google.com/web/updates/2018/10/animation-worklet
+- https://developers.google.com/web/updates/2018/10/animation-worklet
 
 ## Licence
 

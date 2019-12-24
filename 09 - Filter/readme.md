@@ -2,7 +2,7 @@
 
 ## Links
 
-* [Can I use?](http://caniuse.com/css-filters)
+- [Can I use?](http://caniuse.com/css-filters)
 
 ## Licence
 

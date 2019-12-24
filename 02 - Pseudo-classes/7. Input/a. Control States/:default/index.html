@@ -2,44 +2,42 @@
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2018 Rick Beerendonk -->
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Pseudo-class - Input - Control States - :default</title>
 
     <style>
-        :default {
-            box-shadow: 0 0 0 3px red;
-            color: red;
-            font-style: italic;
-        }
+      :default {
+        box-shadow: 0 0 0 3px red;
+        color: red;
+        font-style: italic;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Submit button in a form</h1>
     <form>
-        <button type="button">First</button>
-        <button type="submit">Second (default)</button>
-        <button type="reset">Third</button>
+      <button type="button">First</button>
+      <button type="submit">Second (default)</button>
+      <button type="reset">Third</button>
     </form>
 
     <h1>Checked input</h1>
     <form>
-        <input type="checkbox" id="checkboxChoice1">
-        <label for="checkboxChoice1">First</label>
-        <input type="checkbox" id="checkboxChoice2" checked>
-        <label for="checkboxChoice2">Second</label>
+      <input type="checkbox" id="checkboxChoice1" />
+      <label for="checkboxChoice1">First</label>
+      <input type="checkbox" id="checkboxChoice2" checked />
+      <label for="checkboxChoice2">Second</label>
     </form>
 
     <h1>Selected option</h1>
     <select name="text">
-        <option value="one">First</option>
-        <option value="two" selected>Second (selected)</option>
-        <option value="three">Third</option>
+      <option value="one">First</option>
+      <option value="two" selected>Second (selected)</option>
+      <option value="three">Third</option>
     </select>
-</body>
-
+  </body>
 </html>

@@ -13,9 +13,12 @@
   },
   "homepage": "https://github.com/rickbeerendonk/css-examples#readme",
   "scripts": {
-    "openserver": "node \"./Util 01 - Static File Server/static-file-server.js\" 8070"
+    "openserver": "node \"./Util 01 - Static File Server/static-file-server.js\" 8070",
+    "prettier": "prettier --list-different '**/*.{css,json,js,html,md}'",
+    "prettier-fix": "prettier --write '**/*.{css,json,js,html,md}'"
   },
   "dependencies": {
-    "mime-types": "^2.1.24"
+    "mime-types": "^2.1.24",
+    "prettier": "1.19.1"
   }
 }

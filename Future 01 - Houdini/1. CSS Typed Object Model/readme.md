@@ -2,11 +2,11 @@
 
 ## Specification
 
-* https://drafts.css-houdini.org/css-typed-om/
+- https://drafts.css-houdini.org/css-typed-om/
 
 ## Blog
 
-* https://developers.google.com/web/updates/2018/03/cssom
+- https://developers.google.com/web/updates/2018/03/cssom
 
 ---
 

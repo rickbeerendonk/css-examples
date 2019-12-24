@@ -2,7 +2,7 @@
 
 ## Specifications
 
-* https://www.w3.org/TR/css-grid-1/
+- https://www.w3.org/TR/css-grid-1/
 
 ## Licence
 

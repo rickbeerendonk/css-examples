@@ -2,34 +2,32 @@
 <!-- European Union Public License version 1.2 -->
 <!-- Copyright © 2018 Rick Beerendonk -->
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Selectors - Combinators - General Sibling</title>
 
     <style>
-        #list2~ul {
-            color: red;
-        }
+      #list2 ~ ul {
+        color: red;
+      }
     </style>
-</head>
+  </head>
 
-<body style="color: initial">
+  <body style="color: initial">
     <h1>Lists</h1>
     <ul>
-        <li>List 1: Should not be styled</li>
+      <li>List 1: Should not be styled</li>
     </ul>
     <ul id="list2">
-        <li>List 2: Should not be styled</li>
+      <li>List 2: Should not be styled</li>
     </ul>
     <ul>
-        <li>List 3: Should be styled</li>
+      <li>List 3: Should be styled</li>
     </ul>
     <ul>
-        <li>List 4: Should be styled</li>
+      <li>List 4: Should be styled</li>
     </ul>
-</body>
-
+  </body>
 </html>
