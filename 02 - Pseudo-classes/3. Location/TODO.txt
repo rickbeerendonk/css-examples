@@ -4,3 +4,5 @@
 :target
 :target-within
 :scope
+
+https://drafts.csswg.org/selectors/#location
