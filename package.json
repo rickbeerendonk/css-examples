@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "CSS Examples",
   "author": "Rick Beerendonk",
+  "contributors": ["Maria Isabel Valencia"],
   "license": "EUPL-1.2",
   "repository": {
     "type": "git",
