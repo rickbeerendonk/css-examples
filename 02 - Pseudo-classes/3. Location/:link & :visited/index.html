@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2019 Rick Beerendonk, Maria Isabel Valencia -->
+
+<html lang="en">
+
+<head>
+  <style>
+    /* selects unvisited links */
+    a:link {
+      color: blue;
+    }
+
+    /* selects visited links */
+    a:visited {
+      color: green;
+    }
+
+    /* the state that happens when the user places their mouse pointer on top of a link*/
+    a:hover {
+      color: red;
+    }
+
+    /* selected link - the state that happens when the user clicks on a link.*/
+    a:active {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <p>
+    Mouse over and click the unvisited link:
+    <a href="https://www.oblicum.com">Oblicum.com</a>
+  </p>
+  <p>
+    Link that is already visited:
+    <a href=''>This page</a>
+  </p>
+
+  <script>
+    // Make sure to always have a unique (unvisited?) link to "oblicum.com"
+    const anchor = document.querySelector('a');
+    anchor.href = 'https://www.oblicum.com/#' + Math.random();
+  </script>
+
+</body>
