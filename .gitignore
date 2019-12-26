@@ -11,18 +11,14 @@ spec/
 
 node_modules/
 npm-debug.log
+package-lock.json
 
 #################
-## bower
+## yarn
 #################
 
-bower_components/
-
-#################
-## zeit next
-#################
-
-.next/
+yarn.lock
+yarn-error.log
 
 #################
 ## Other
