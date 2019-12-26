@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2019 Rick Beerendonk, Maria Isabel Valencia -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Media Queries - User Preference - prefer-color-schema</title>
+
+    <style>
+        body {
+            background-color: red;
+        }
+
+        @media (prefers-color-scheme: no-preference) {
+            body {
+                background-color: greenyellow;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: black;
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+
+<body></body>
+
+</html>
