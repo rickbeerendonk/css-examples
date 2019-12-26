@@ -27,7 +27,7 @@
     "validate": "npm run prettier"
   },
   "dependencies": {
-    "mime-types": "2.1.24",
+    "mime-types": "2.1.25",
     "prettier": "1.19.1"
   },
   "devDependencies": {
