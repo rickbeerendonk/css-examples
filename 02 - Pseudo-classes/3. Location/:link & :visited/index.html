@@ -3,35 +3,34 @@
 <!-- Copyright © 2019 Rick Beerendonk, Maria Isabel Valencia -->
 
 <html lang="en">
+  <head>
+    <style>
+      /* Selects unvisited links */
+      a:link {
+        color: #d676ff;
+      }
 
-<head>
-  <style>
-    /* Selects unvisited links */
-    a:link {
-      color: #d676ff;
-    }
+      /* Selects visited links */
+      a:visited {
+        color: #76c8ff;
+      }
+    </style>
+  </head>
 
-    /* Selects visited links */
-    a:visited {
-      color: #76c8ff;
-    }
-  </style>
-</head>
+  <body>
+    <p>
+      Unvisited link:
+      <a href="https://www.oblicum.com">Oblicum.com</a>
+    </p>
+    <p>
+      Visited link:
+      <a href="">This page</a>
+    </p>
 
-<body>
-  <p>
-    Unvisited link:
-    <a href="https://www.oblicum.com">Oblicum.com</a>
-  </p>
-  <p>
-    Visited link:
-    <a href=''>This page</a>
-  </p>
-
-  <script>
-    // Make sure to always have a unique (unvisited?) link to "oblicum.com"
-    const anchor = document.querySelector('a');
-    anchor.href = 'https://www.oblicum.com/#' + Math.random();
-  </script>
-
-</body>
+    <script>
+      // Make sure to always have a unique (unvisited?) link to "oblicum.com"
+      const anchor = document.querySelector('a');
+      anchor.href = 'https://www.oblicum.com/#' + Math.random();
+    </script>
+  </body>
+</html>
