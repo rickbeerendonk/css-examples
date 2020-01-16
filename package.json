@@ -27,10 +27,10 @@
     "validate": "npm run prettier"
   },
   "dependencies": {
-    "mime-types": "2.1.25"
+    "mime-types": "2.1.26"
   },
   "devDependencies": {
-    "husky": "3.1.0",
+    "husky": "4.0.10",
     "prettier": "1.19.1"
   }
 }
