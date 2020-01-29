@@ -30,7 +30,7 @@
     "mime-types": "2.1.26"
   },
   "devDependencies": {
-    "husky": "4.0.10",
+    "husky": "4.2.1",
     "prettier": "1.19.1"
   }
 }
