@@ -20,7 +20,7 @@ const port = process.argv[2] || 8080;
 let filePath = process.argv[3];
 
 http
-  .createServer(function(request, response) {
+  .createServer(function (request, response) {
     let uri = url.parse(request.url).pathname;
     let decodeUri = decodeURIComponent(uri);
     let filename = path.join(basePath, decodeUri);
@@ -43,7 +43,7 @@ http
       return;
     }
 
-    fs.readFile(filename, 'binary', function(err, file) {
+    fs.readFile(filename, 'binary', function (err, file) {
       if (err) {
         response.writeHead(500, { 'Content-Type': 'text/plain' });
         response.write(err + '\n');

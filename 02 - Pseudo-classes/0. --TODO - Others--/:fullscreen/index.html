@@ -47,7 +47,7 @@
     <script>
       // Full Screen API: http://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API.html
 
-      (function() {
+      (function () {
         document.fullscreenEnabled =
           document.fullscreenEnabled ||
           document.webkitFullscreenEnabled ||
@@ -103,7 +103,7 @@
           console.error('Full screen error');
         };
 
-        elem.onclick = function(ev) {
+        elem.onclick = function (ev) {
           // Cancel full screen:
           if (
             (document.fullscreenElement &&

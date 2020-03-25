@@ -55,9 +55,9 @@
     <img id="image" src="Sinnataggen.png" />
 
     <script>
-      $('input[type=checkbox]').on('change', function() {
+      $('input[type=checkbox]').on('change', function () {
         var filter = $('input:checked')
-          .map(function() {
+          .map(function () {
             return this.dataset.filter;
           })
           .get()
