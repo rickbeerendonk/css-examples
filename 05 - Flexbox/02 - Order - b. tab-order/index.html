@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
+<!-- Copyright © 2019 Rick Beerendonk -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Flexbox - Direction - Column</title>
+    <title>Flexbox - Order - tab-order</title>
 
     <style>
+      #one {
+        order: 1;
+      }
+
+      #three {
+        order: -1;
+      }
+
       main {
         display: flex;
-        flex-direction: column;
       }
 
       div {
@@ -26,9 +33,10 @@
   </head>
   <body>
     <main>
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
+      <input id="one" value="1" autofocus />
+      <input id="two" value="2" />
+      <input id="three" value="3" />
+      <input id="four" value="4" />
     </main>
   </body>
 </html>
