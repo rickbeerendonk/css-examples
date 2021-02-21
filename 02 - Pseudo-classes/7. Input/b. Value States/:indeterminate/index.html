@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2021 Rick Beerendonk -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pseudo-class - Input - Control States - :indeterminate</title>
+
+    <style>
+      input:indeterminate + label {
+        color: red;
+      }
+
+      input:indeterminate {
+        box-shadow: 0 0 0 3px red;
+      }
+
+      progress:indeterminate {
+        box-shadow: 0 0 0 3px red;
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Checkbox</h1>
+    <form>
+      <input type="checkbox" id="checkboxChoice1" />
+      <label for="checkboxChoice1">First</label>
+      <!-- Will be set to indeterminate in script below -->
+      <input type="checkbox" id="checkboxChoice2" />
+      <label for="checkboxChoice2">Second</label>
+      <input type="checkbox" id="checkboxChoice3" checked="true" />
+      <label for="checkboxChoice3">Third</label>
+    </form>
+
+    <h1>Radio</h1>
+    <form>
+      <!-- None are checked -->
+      <input type="radio" name="choice" id="radioChoice1" />
+      <label for="radioChoice1">First</label>
+      <input type="radio" name="choice" id="radioChoice2" />
+      <label for="radioChoice2">Second</label>
+    </form>
+
+    <h1>Progress</h1>
+    <progress></progress>
+
+    <script>
+      document.getElementById('checkboxChoice2').indeterminate = true;
+    </script>
+  </body>
+</html>
