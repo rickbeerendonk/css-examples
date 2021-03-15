@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2021 Rick Beerendonk -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pseudo-class - Input - Value Checking - :in-range</title>
+
+    <style>
+      input:in-range + label {
+        color: red;
+      }
+
+      input:in-range {
+        box-shadow: 0 0 0 3px red;
+      }
+
+      option:in-range {
+        box-shadow: 0 0 0 3px red;
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Number</h1>
+    <form>
+      <input type="number" id="number1" min="5" max="10" value="0" />
+      <label for="number1">First</label>
+      <input type="number" id="number2" min="5" max="10" value="10" />
+      <label for="number2">Second</label>
+    </form>
+  </body>
+</html>
