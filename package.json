@@ -21,9 +21,10 @@
     }
   },
   "scripts": {
-    "openserver": "node \"./Util 01 - Static File Server/static-file-server.js\" 8070",
+    "openserver": "node ./server/server.js",
     "prettier": "prettier --list-different '**/*.{css,json,js,html,md,mjs}'",
     "prettier-fix": "prettier --write '**/*.{css,json,js,html,md,mjs}'",
+    "start": "npm run openserver -- \".\"",
     "validate": "npm run prettier"
   },
   "dependencies": {
