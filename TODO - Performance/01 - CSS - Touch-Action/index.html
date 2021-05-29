@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2021 Rick Beerendonk -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Performance - CSS - touch-action</title>
+
+    <style>
+      /* Respond to taps immediately, instead of waiting 300ms for a potential 2nd tap */
+      a,
+      button {
+        touch-action: manipulation;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://oblicum.com">Will respond immediately on touch</a>
+    <button onclick="alert('clicked')">
+      Will respond immediately on touch
+    </button>
+  </body>
+</html>
